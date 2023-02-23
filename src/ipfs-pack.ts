@@ -105,7 +105,8 @@ const updateSummaryMetadataFile = (imagesBaseCid: string | undefined) => {
         setProperty(
           item,
           config.metadataSchemaMapper['image.href'],
-          `https://ipfs.io/ipfs/${imagesBaseCid}/${edition}.png`
+          `https://${imagesBaseCid}.ipfs.nftstorage.link/{edition}.png`
+          // `https://ipfs.io/ipfs/${imagesBaseCid}/${edition}.png`
         );
         setProperty(
           item,
@@ -142,7 +143,8 @@ const updateMetadataFiles = (imagesBaseCid: string | undefined) => {
     setProperty(
       fileJSON,
       config.metadataSchemaMapper['image.href'],
-      `https://ipfs.io/ipfs/${imagesBaseCid}/${edition}.png`
+      `https://${imagesBaseCid}.ipfs.nftstorage.link/{edition}.png`
+      // `https://ipfs.io/ipfs/${imagesBaseCid}/${edition}.png`
     );
     setProperty(
       fileJSON,
